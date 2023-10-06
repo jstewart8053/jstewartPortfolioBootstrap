@@ -85,19 +85,16 @@ h6 {
   font-weight: 800;
 }
 
-.masthead {
-  min-height: 30rem;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
+  .masthead {
+    position: fixed; /* Fixed position to keep it always visible */
+    top: 0; /* Stick it to the top of the viewport */
+    left: 0; /* Stick it to the left of the viewport */
+    width: 100vw; /* Take up the full width of the viewport */
+    height: 100vh; /* Take up the full viewport height */
+ /* Add your background image here */
+    background-size: cover; /* Ensure the background image covers the entire header */
+  }
 
 .masthead h1 {
   font-size: 4rem;
@@ -108,6 +105,7 @@ h6 {
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
+    width: 100vw;
   }
   .masthead h1 {
     font-size: 5.5rem;
